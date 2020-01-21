@@ -2,8 +2,8 @@
 def map_to_negativize(source_array)
 arr = []
 
-  source_array.size do
-    arr << source_array * -1
+  while i < source_array do
+    arr << source_array[i] * -1
   end
 
 
