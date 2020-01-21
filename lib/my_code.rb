@@ -6,7 +6,5 @@ i=0
     arr << source_array[i] * - 1
     i += 1
   end
-
-
   return arr
 end
