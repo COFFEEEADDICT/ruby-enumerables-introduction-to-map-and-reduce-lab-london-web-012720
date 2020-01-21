@@ -61,6 +61,6 @@ def reduce_to_total(source_array, starting_point)
     array.each do |number|
       sum += number
     end
-    return sum 
-  end 
+    return sum
+  end
   ##########################################################
