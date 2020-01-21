@@ -56,17 +56,11 @@ def reduce_to_total(source_array, starting_point)
   end
 ##########################################################
 def reduce_to_total(source_array, starting_point)
-  last = 0
-  i=1
-  total=0
-  sum =0
-
-  sum = starting_point + source_array[0]
-  puts sum
-    while i < source_array.size do
-      sum += source_array[i]
-      i += 1
+    sum = 0
+    starting_point
+    array.each do |number|
+      sum += number
     end
-    return sum
-  end
-  #######################
+    return sum 
+  end 
+  ##########################################################
