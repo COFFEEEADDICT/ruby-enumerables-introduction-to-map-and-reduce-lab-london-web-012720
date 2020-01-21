@@ -41,20 +41,20 @@ def map_to_square(source_array)
     return arr
   end
 ##########################################################
-def reduce_to_total(source_array, starting_point)
-  arr = []
-  i=0
-  add =0
-    while i < source_array.size do
-      add +=  starting_point + source_array[i]
-
-      i += 1
-    end
-
-    return add
-  end
+# def reduce_to_total(source_array, starting_point)
+#   arr = []
+#   i=0
+#   add =0
+#     while i < source_array.size do
+#       add +=  starting_point + source_array[i]
+#
+#       i += 1
+#     end
+#
+#     return add
+#   end
 ##########################################################
-def reduce_to_total(source_array, starting_point=0)
+def reduce_to_total(source_array, starting_point)
   total = starting_point
     source_array.length.times do |i|
       total = source_array[i] + total end
