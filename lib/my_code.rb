@@ -56,9 +56,9 @@ def reduce_to_total(source_array, starting_point)
   end
 ##########################################################
 def reduce_to_total(source_array, starting_point)
-  total=starting_point
-    source_array.length.times {|index|
-      total=source_array[index]+total}
+  total = starting_point
+    source_array.length.times do |index|
+      total = source_array[index] + total end
     return total
   end
   ##########################################################
