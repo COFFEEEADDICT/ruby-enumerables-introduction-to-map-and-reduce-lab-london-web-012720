@@ -4,6 +4,7 @@ arr = []
 
   while i < source_array do
     arr << source_array[i] * -1
+    i += 1
   end
 
 
