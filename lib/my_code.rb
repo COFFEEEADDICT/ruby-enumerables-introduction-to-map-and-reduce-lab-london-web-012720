@@ -42,6 +42,8 @@ def map_to_square(source_array)
   end
 ##########################################################
 def reduce_to_total(source_array, starting_point)
+  pp source_array
+  pp starting_point
   arr = []
   i=0
   total=0
