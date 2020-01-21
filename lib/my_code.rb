@@ -44,7 +44,6 @@ def map_to_square(source_array)
 def reduce_to_total(source_array, starting_point)
   arr = []
   i=0
-  total=0
   add =0
     while i < source_array.size do
       add +=  starting_point + source_array[i]
@@ -71,9 +70,9 @@ def reduce_to_all_true(source_array)
 end
 ##########################################################
 def reduce_to_any_true(source_array)
-  source_array.length.times{|index|
-    if source_array[index]
+  source_array.length.times{|i|
+    if source_array[i]
       return true
     end}
   return false
-end 
+end
