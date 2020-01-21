@@ -57,8 +57,15 @@ def reduce_to_total(source_array, starting_point)
 ##########################################################
 def reduce_to_total(source_array, starting_point=0)
   total = starting_point
-    source_array.length.times do |index|
-      total = source_array[index] + total end
+    source_array.length.times do |i|
+      total = source_array[i] + total end
     return total
   end
   ##########################################################
+def reduce_to_all_true(source_array)
+  source_array.length.times {|i|
+    if !source_array[i]
+      return false
+    end}
+  return true
+end
